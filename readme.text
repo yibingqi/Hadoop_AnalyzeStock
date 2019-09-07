@@ -1,0 +1,167 @@
+HW4 Yibing Qi 111577639
+
+The zip file contains 5 files:
+MyWordCount.java
+part-r-00000
+AnalyzeStock.java
+part-r-00000-2
+readme.text
+
+Part A
+1) WordCount 2.0
+For this question, I test my program in Eclipse:
+(1)     Select Run -> Run configuration
+(2)     Under the tab Argument type program arguments:
+-Dmapred.reduce.tasks=10 -Dcase.sensitive=true  /home/cloudera/input/big.txt,/home/cloudera/input/writprog.pro /home/cloudera/workspace/WordCount/output
+Run program using the run button.
+
+Part of the output shows as follow: (full version: part-r-00000)
+0	10
+00	3
+000	220
+003	1
+01	2
+012	1
+014	1
+017	1
+019	1
+02	6
+020	1
+021	1
+......
+Adams	78
+Adamses	1
+Adamson	2
+Adding	1
+Additional	4
+Address	2
+Adduction	2
+Adductor	1
+Adele	1
+Aden	1
+Adenoma	6
+Adenomas	1
+Adieu	5
+Adipose	1
+...
+assassins	1
+assault	13
+assaulted	2
+assemble	8
+assembled	49
+assemblies	22
+assembling	2
+assembly	30
+assemblymen	1
+assent	9
+assented	14
+assenting	2
+assert	8
+asserted	12
+asserting	2
+assertion	5
+asserts	1
+......
+
+
+2) Stock Price Analysis
+
+For this question, I test my program in Eclipse:
+(1)     Select Run -> Run configuration
+(2)     Under the tab Argument type program arguments(example):
+-Dstartdate=01/01/1995 -Denddate=01/01/2000 -Daggregation=avg -Dname=low /home/cloudera/stockdatafull.csv /home/cloudera/workspace/AnalyzeStock/output
+Run program using the run button.
+
+Part of the output shows as follow: (full version: part-r-00000-2)
+(NaN means there is no record for this stock during 01/01/1995 and 01/01/2000. If ignore the NaN, the result is consistent with the sample output provided on class website.)
+
+A	46.45866666666667
+AA	64.14053048297691
+AAL	NaN
+AAMC	NaN
+AAN	16.027482185273197
+AAOI	NaN
+AAON	8.314133016627077
+AAP	NaN
+AAPL	33.59668250197947
+AAT	NaN
+AAWW	NaN
+ABAX	3.8550039588281866
+ABBV	NaN
+ABC	41.2894495412844
+ABCB	15.154647664291396
+ABCO	NaN
+ABFS	8.65155977830563
+ABG	NaN
+ABM	25.968931116389555
+ABMD	12.974212193190798
+ABT	48.37135391923964
+ACAD	NaN
+ACAS	18.412410865874342
+ACAT	10.446302454473463
+ACC	NaN
+ACCL	15.857344357976656
+ACCO	NaN
+ACE	44.1313855898654
+ACET	14.42912114014251
+ACFN	5.3008630245447295
+ACGL	19.224051565377536
+ACHC	3.8200395882818605
+ACHN	NaN
+ACI	22.520934283452107
+ACIW	34.14578775510202
+ACLS	NaN
+ACM	NaN
+ACN	NaN
+ACO	14.373990498812347
+ACOR	NaN
+ACRE	NaN
+ACRX	NaN
+ACTG	NaN
+ACW	NaN
+ACXM	22.83878859857483
+ADBE	47.65082343626286
+ADC	18.16555027711799
+ADES	NaN
+ADI	30.74416468725248
+ADM	18.07251781472687
+ADMS	NaN
+ADNC	NaN
+ADP	52.66444180522529
+ADS	NaN
+ADSK	34.155859065716555
+ADT	NaN
+ADTN	36.29111638954869
+ADUS	NaN
+ADVS	35.38024975984632
+AE	9.621282660332543
+AEC	18.399089469517005
+AEE	38.67121031746032
+AEGN	12.092763262074424
+AEGR	NaN
+AEIS	16.53014423076924
+AEL	NaN
+AEO	27.67064133016627
+AEP	40.94281868566898
+AEPI	29.85381631037213
+AERI	NaN
+AES	40.36334916864603
+AET	73.95604908946939
+AF	42.006365795724484
+AFAM	5.2701583531274725
+AFFX	36.27730598669621
+AFG	33.81465558194768
+AFH	NaN
+AFL	43.108772763262024
+AFOP	NaN
+AFSI	NaN
+AGCO	25.000380047505946
+AGEN	NaN
+AGII	29.16770387965158
+AGIO	NaN
+AGM	32.34879528985509
+AGN	40.00616785431516
+
+
+
+
