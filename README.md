@@ -1,5 +1,5 @@
 # Hadoop_AnalyzeStock
-####Analyze daily values of stock prices of major companies.
+#### Analyze daily values of stock prices of major companies.
 
 1. The program accepts 6 positional arguments.
    * The first two arguments are the start and end dates of our interval of interest, which is specified by user. The date can be in MM/DD/YYYY format. You do NOT have to do date validation or user input error check.
